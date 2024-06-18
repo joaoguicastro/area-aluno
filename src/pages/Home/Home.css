@@ -1,0 +1,117 @@
+/* Reset some basic styles */
+body, html, div, h1, p, ul, li, img, a, span {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+.home-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.main-header {
+  width: 100%;
+  background-color: rgb(6, 71, 115);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.main-logo {
+  height: 50px;
+}
+
+.header-icons {
+  display: flex;
+  align-items: center;
+}
+
+.profile-icon {
+  width: 40px;
+  height: 40px;
+  margin-left: auto;
+  cursor: pointer;
+}
+
+.sidebar {
+  width: 60px;
+  background-color: rgb(6, 71, 115);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 20px 0;
+  position: fixed;
+  top: 50px; /* altura do header */
+  bottom: 0;
+  left: 0;
+}
+
+.logo {
+  width: 40px;
+  margin-bottom: 20px;
+}
+
+.sidebar nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar nav ul li {
+  margin: 20px 0;
+}
+
+.sidebar nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+}
+
+.main-content {
+  flex: 1;
+  padding: 20px;
+  background-color: #f0f4f8;
+  margin-left: 60px; /* adjust to the width of the sidebar */
+  margin-top: 70px; /* adjust to the height of the header */
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+.courses {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.course-card {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 10px;
+  flex: 1 1 calc(50% - 40px); /* adjust the percentage to show two cards per row */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.course-card img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+}
+
+.course-details {
+  margin-top: 10px;
+  text-align: center;
+}

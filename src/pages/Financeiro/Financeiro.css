@@ -1,0 +1,127 @@
+/* Reset some basic styles */
+body, html, div, h1, p, ul, li, img, a, span {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+.finance-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.main-header {
+  width: 100%;
+  background-color: rgb(6, 71, 115);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+.main-logo {
+  height: 50px;
+}
+
+.header-icons {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.profile-icon {
+  width: 40px;
+  height: 40px;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.sidebar {
+  width: 60px;
+  background-color: rgb(6, 71, 115);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0;
+  position: fixed;
+  top: 60px; /* Adjust to the height of the header */
+  bottom: 0;
+  left: 0;
+  z-index: 999;
+}
+
+.logo {
+  width: 40px;
+  margin-bottom: 20px;
+}
+
+.sidebar nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar nav ul li {
+  margin: 20px 0;
+}
+
+.sidebar nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+}
+
+.main-content {
+  flex: 1;
+  padding: 20px;
+  background-color: #f0f4f8;
+  margin-left: 60px; /* adjust to the width of the sidebar */
+  margin-top: 60px; /* adjust to the height of the header */
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+.filter {
+  margin-bottom: 20px;
+}
+
+.period {
+  background-color: #c4d9f7;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+
+.finance-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.finance-table th, .finance-table td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+}
+
+.finance-table .paid {
+  background-color: #d4edda;
+}
+
+.finance-table .overdue {
+  background-color: #f8d7da;
+}

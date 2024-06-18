@@ -1,32 +1,27 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
+import Header from '../../components/Header/Header';
+import Sidebar from '../../components/Sidebar/Sidebar';
 import './Home.css';
 
 function Home() {
+  const navigate = useNavigate();
+
+  const handleCourseClick = () => {
+    navigate('/curso');
+  };
+
   return (
     <div className="home-container">
-      <header className="main-header">
-        <img src="/logo.svg" alt="Super Cursos Logo" className="main-logo" />
-        <div className="header-icons">
-          <img src="/perfil.svg" alt="Perfil" className="profile-icon" />
-        </div>
-      </header>
-      <aside className="sidebar">
-        <nav>
-          <ul>
-            <li><Link to="/home"><img src="/home.svg" alt="Home" className="icon" /></Link></li>
-            <li><Link to="/financeiro"><img src="/financeiro.svg" alt="Financeiro" className="icon" /></Link></li>
-            <li><Link to="/presenca"><img src="/presenca.svg" alt="Presença" className="icon" /></Link></li>
-          </ul>
-        </nav>
-      </aside>
+      <Header />
+      <Sidebar />
       <main className="main-content">
         <header className="header">
           <i className="bell-icon"></i>
         </header>
         <h1>Meus Cursos:</h1>
         <div className="courses">
-          <div className="course-card">
+          <div className="course-card" onClick={handleCourseClick}>
             <p>Presencial</p>
             <img src="/curso.svg" alt="Matemática" />
             <div className="course-details">
@@ -34,7 +29,7 @@ function Home() {
               <span>10:30</span>
             </div>
           </div>
-          <div className="course-card">
+          <div className="course-card" onClick={handleCourseClick}>
             <p>Online</p>
             <img src="/curso.svg" alt="Matemática" />
             <div className="course-details">

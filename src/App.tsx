@@ -20,7 +20,7 @@ function App() {
   return (
     <div className="container">
       <div className="login-box">
-        <img src="/logo.svg" alt="Super Cursos Logo" className="logo" />
+        <img src="../public/logo.svg" alt="Super Cursos Logo" className="logo" />
         <h2>Acesso a área do aluno</h2>
         <p>Preencha os dados abaixo para ter acesso.</p>
         <form onSubmit={passarTela}>
@@ -35,7 +35,7 @@ function App() {
         <a href="#" className="forgot-password">Recuperar a senha</a>
       </div>
       <div className="image-container">
-        <img src="/imagem.svg" alt="Typing on keyboard" className="side-image" />
+        <img src="../public/imagem.svg" alt="Typing on keyboard" className="side-image" />
       </div>
     </div>
   );

@@ -1,3 +1,4 @@
+/* Reset some basic styles */
 body, html, div, h1, p, ul, li, img, a, span {
   margin: 0;
   padding: 0;
@@ -5,7 +6,7 @@ body, html, div, h1, p, ul, li, img, a, span {
   font-family: Arial, sans-serif;
 }
 
-.home-container {
+.presenca-container {
   display: flex;
   flex-direction: column;
   height: 100vh;
@@ -13,12 +14,17 @@ body, html, div, h1, p, ul, li, img, a, span {
 
 .main-header {
   width: 100%;
-  background-color: #0033a0;
+  background-color: rgb(6, 71, 115);
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
 }
 
 .main-logo {
@@ -28,6 +34,7 @@ body, html, div, h1, p, ul, li, img, a, span {
 .header-icons {
   display: flex;
   align-items: center;
+  margin-left: auto;
 }
 
 .profile-icon {
@@ -39,16 +46,17 @@ body, html, div, h1, p, ul, li, img, a, span {
 
 .sidebar {
   width: 60px;
-  background-color: #c4d9f7;
+  background-color: rgb(6, 71, 115);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   padding: 20px 0;
   position: fixed;
-  top: 0;
+  top: 60px; /* Adjust to the height of the header */
   bottom: 0;
   left: 0;
+  z-index: 999;
 }
 
 .logo {
@@ -67,7 +75,7 @@ body, html, div, h1, p, ul, li, img, a, span {
 
 .sidebar nav ul li a {
   text-decoration: none;
-  color: black;
+  color: white;
 }
 
 .icon {
@@ -79,54 +87,60 @@ body, html, div, h1, p, ul, li, img, a, span {
   flex: 1;
   padding: 20px;
   background-color: #f0f4f8;
-  margin-left: 60px;
-  margin-top: 70px;
-}
-
-.header {
-  display: flex;
-  justify-content: flex-end;
-  margin-bottom: 20px;
-}
-
-.header i {
-  font-size: 24px;
-  margin-left: 20px;
+  margin-left: 60px; /* adjust to the width of the sidebar */
+  margin-top: 60px; /* adjust to the height of the header */
 }
 
 h1 {
   margin-bottom: 20px;
 }
 
-.courses {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 20px;
+.filter {
+  margin-bottom: 20px;
 }
 
-.course-card {
-  background-color: white;
-  border-radius: 10px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  padding: 10px;
-  text-align: center;
-}
-
-.course-card p {
-  font-weight: bold;
-  margin-bottom: 10px;
-}
-
-.course-card img {
-  width: 100%;
-  border-radius: 10px;
-  margin-bottom: 10px;
-}
-
-.course-details {
+.calendar-header {
   display: flex;
   justify-content: space-between;
-  background-color: #f0f4f8;
-  padding: 5px 10px;
+  padding: 10px 0;
+}
+
+.calendar {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.day {
+  width: 14.28%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: center;
+  cursor: pointer;
+}
+
+.day.today {
+  background-color: #ffeb3b;
+}
+
+.day.present {
+  background-color: #d4edda;
+}
+
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-content {
+  background-color: white;
+  padding: 20px;
   border-radius: 5px;
+  text-align: center;
 }

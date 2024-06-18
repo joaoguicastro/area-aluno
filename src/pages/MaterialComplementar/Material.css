@@ -1,0 +1,119 @@
+.material-complementar-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.main-content {
+  flex: 1;
+  padding: 20px;
+  background-color: #f0f4f8;
+  margin-left: 60px; /* adjust to the width of the sidebar */
+  margin-top: 70px; /* adjust to the height of the header */
+}
+
+.course-menu {
+  background-color: #f0f4f8;
+  padding: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.course-menu ul {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  padding: 0;
+}
+
+.course-menu ul li {
+  margin: 0 10px;
+}
+
+.course-menu ul li a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.course-menu ul li a:hover {
+  background-color: #c4d9f7;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+.description-banner {
+  background-color: #4a90e2;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.description-banner p {
+  margin: 0;
+  font-size: 18px;
+  text-align: center;
+}
+
+.course-teacher {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.course-teacher img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.btn-duvidas {
+  margin-left: 20px;
+  padding: 10px 20px;
+  background-color: #0033a0;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.material-sections {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.material-section {
+  flex: 1;
+  background-color: #c4d9f7;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.material-section h2 {
+  margin-bottom: 10px;
+}
+
+.material-button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #e0e4f7;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  font-weight: bold;
+}
+
+.material-button:hover {
+  background-color: #a0c4e7;
+}

@@ -1,0 +1,150 @@
+/* Reset some basic styles */
+body, html, div, h1, p, ul, li, img, a, span {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+.perfil-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.main-header {
+  width: 100%;
+  background-color: rgb(6, 71, 115);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.main-logo {
+  height: 50px;
+}
+
+.header-icons {
+  display: flex;
+  align-items: center;
+}
+
+.profile-icon {
+  width: 40px;
+  height: 40px;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.sidebar {
+  width: 60px;
+  background-color: rgb(6, 71, 115);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.logo {
+  width: 40px;
+  margin-bottom: 20px;
+}
+
+.sidebar nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar nav ul li {
+  margin: 20px 0;
+}
+
+.sidebar nav ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+}
+
+.main-content {
+  flex: 1;
+  padding: 20px;
+  background-color: #f0f4f8;
+  margin-left: 60px; /* adjust to the width of the sidebar */
+  margin-top: 70px; /* adjust to the height of the header */
+}
+
+.perfil-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.user-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.user-profile {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 10px;
+}
+
+.user-details {
+  background-color: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+  width: 80%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+.user-details h2 {
+  margin-bottom: 20px;
+}
+
+.user-details p {
+  margin-bottom: 10px;
+}
+
+.btn {
+  background-color: #0033a0;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.user-courses {
+  background-color: #fff;
+  padding: 20px;
+  width: 80%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+.user-courses h2 {
+  margin-bottom: 20px;
+}
+
+.user-courses h3 {
+  margin-bottom: 10px;
+}
+
+.user-courses p {
+  margin-bottom: 10px;
+}

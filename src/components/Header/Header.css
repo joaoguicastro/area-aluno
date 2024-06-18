@@ -1,0 +1,26 @@
+.main-header {
+    width: 100%;
+    background-color: rgb(6, 71, 115);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .main-logo {
+    height: 50px;
+  }
+  
+  .header-icons {
+    display: flex;
+    align-items: center;
+  }
+  
+  .profile-icon {
+    width: 40px;
+    height: 40px;
+    margin-left: auto;
+    cursor: pointer;
+  }
+  
