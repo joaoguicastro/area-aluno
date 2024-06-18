@@ -1,0 +1,94 @@
+body, html, div, h2, p, label, input, button, a {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  .container {
+    display: flex;
+    height: 100vh;
+  }
+  
+  .login-box {
+    flex: 1;
+    background-color: #e0f0ff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  .logo {
+    width: 150px;
+    margin-bottom: 20px;
+  }
+  
+  h2 {
+    margin-bottom: 10px;
+  }
+  
+  p {
+    margin-bottom: 20px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 300px;
+  }
+  
+  label {
+    margin-bottom: 5px;
+  }
+  
+  input {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  input::placeholder {
+    color: #999;
+  }
+  
+  .login-button {
+    padding: 10px;
+    background-color: #66cc66;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .login-button:hover {
+    background-color: #55aa55;
+  }
+  
+  .forgot-password {
+    margin-top: 15px;
+    color: #0066cc;
+    text-decoration: none;
+  }
+  
+  .forgot-password:hover {
+    text-decoration: underline;
+  }
+  
+  .image-container {
+    flex: 1;
+    background-image: url('path-to-your-image.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .side-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
