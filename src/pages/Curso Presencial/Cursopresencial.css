@@ -1,0 +1,103 @@
+.curso-presencial-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+  
+  .main-content {
+    flex: 1;
+    padding: 20px;
+    background-color: #f0f4f8;
+    margin-left: 60px; /* adjust to the width of the sidebar */
+    margin-top: 70px; /* adjust to the height of the header */
+  }
+  
+  .tabs {
+    display: flex;
+    justify-content: space-around;
+    background-color: #ececec;
+    padding: 10px 0;
+    margin-bottom: 20px;
+    border-radius: 10px;
+  }
+  
+  .tab {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+  
+  .curso-info {
+    background-color: #d3d3d3;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .professor-info {
+    background-color: #007bff;
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    margin-bottom: 20px;
+  }
+  
+  .professor-details {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .professor {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+  }
+  
+  .professor img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+  }
+  
+  .professor-name {
+    font-weight: bold;
+  }
+  
+  .tira-duvidas-button {
+    background-color: white;
+    color: #007bff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    cursor: pointer;
+  }
+  
+  .tira-duvidas-button img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+  }
+  
+  .video-container {
+    background-color: #e0e0e0;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  video {
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 10px;
+  }
+  

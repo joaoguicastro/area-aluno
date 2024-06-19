@@ -1,0 +1,38 @@
+.sidebaradm {
+    width: 60px;
+    background-color: rgb(6, 71, 115);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 20px 0;
+    position: fixed;
+    top: 50px; /* altura do header */
+    bottom: 0;
+    left: 0;
+  }
+  
+  .logo {
+    width: 40px;
+    margin-bottom: 20px;
+  }
+  
+  .sidebaradm nav ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .sidebaradm nav ul li {
+    margin: 20px 0;
+  }
+  
+  .sidebaradm nav ul li a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  .icon {
+    width: 40px;
+    height: 40px;
+  }
+  

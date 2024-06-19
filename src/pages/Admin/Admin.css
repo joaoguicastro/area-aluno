@@ -1,0 +1,40 @@
+.admin-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+  
+  .main-content {
+    flex: 1;
+    padding: 20px;
+    background-color: #f0f4f8;
+    margin-left: 60px; /* adjust to the width of the sidebar */
+    margin-top: 70px; /* adjust to the height of the header */
+  }
+  
+  h1 {
+    margin-bottom: 20px;
+  }
+  
+  .admin-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .admin-button {
+    flex: 1;
+    padding: 20px;
+    background-color: #e0e4f7;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .admin-button:hover {
+    background-color: #a0c4e7;
+  }
+  

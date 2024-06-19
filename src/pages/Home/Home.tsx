@@ -10,6 +10,9 @@ function Home() {
   const handleCourseClick = () => {
     navigate('/curso');
   };
+  const handleCourseClick2 = () => {
+    navigate('/cursopresencial');
+  };
 
   return (
     <div className="home-container">
@@ -21,7 +24,7 @@ function Home() {
         </header>
         <h1>Meus Cursos:</h1>
         <div className="courses">
-          <div className="course-card" onClick={handleCourseClick}>
+          <div className="course-card" onClick={handleCourseClick2}>
             <p>Presencial</p>
             <img src="/curso.svg" alt="Matemática" />
             <div className="course-details">

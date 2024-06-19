@@ -1,0 +1,99 @@
+.adicionar-nota-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+  
+  .main-content {
+    flex: 1;
+    padding: 20px;
+    background-color: #f0f4f8;
+    margin-left: 60px; /* adjust to the width of the sidebar */
+    margin-top: 70px; /* adjust to the height of the header */
+  }
+  
+  h1 {
+    margin-bottom: 20px;
+  }
+  
+  .form-container {
+    background-color: #d3d3d3;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  input, select {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .search-button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 20px;
+  }
+  
+  .erro {
+    color: red;
+    margin-bottom: 20px;
+  }
+  
+  h2 {
+    margin-bottom: 10px;
+  }
+  
+  .notas-list {
+    background-color: #e0e0e0;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .materia-item {
+    margin-bottom: 10px;
+  }
+  
+  .nota-item {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .adicionar-nota {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .add-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .add-icon img {
+    width: 24px;
+    height: 24px;
+  }
+  

@@ -10,8 +10,13 @@ function App() {
     const cpfInput = document.getElementById('cpf') as HTMLInputElement;
     const passwordInput = document.getElementById('password') as HTMLInputElement;
 
-    if (cpfInput.value === '02887352342' && passwordInput.value === '123456') {
+    const cpf = cpfInput.value;
+    const password = passwordInput.value;
+
+    if (cpf === '02887352342' && password === '123456') {
       navigate('/home');
+    } else if (cpf === '12345678910' && password === '123') {
+      navigate('/admin');
     } else {
       alert('Usuário ou senha inválidos');
     }
