@@ -1,6 +1,6 @@
 import React from 'react';
-import Header from '../../components/Header/Header';
-import SidebarAdm from '../../components/Sidebar Admin/SidebarAdm';
+import Header from '../../../components/Header/Header';
+import SidebarAdm from '../../../components/Sidebar Admin/SidebarAdm';
 import { useNavigate } from 'react-router-dom';
 import './Admin.css';
 

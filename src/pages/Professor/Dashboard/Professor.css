@@ -1,0 +1,57 @@
+.professor-dashboard-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+  
+  .main-content {
+    flex: 1;
+    padding: 20px;
+    background-color: #f0f4f8;
+    margin-left: 60px; /* adjust to the width of the sidebar */
+    margin-top: 70px; /* adjust to the height of the header */
+  }
+  
+  .busca-aluno {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  input[type="text"] {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 300px;
+  }
+  
+  button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .notas-aluno {
+    margin-bottom: 20px;
+  }
+  
+  .notas-aluno ul, .mensagens ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .notas-aluno li, .mensagens li {
+    background-color: white;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .mensagens {
+    margin-top: 20px;
+  }
+  

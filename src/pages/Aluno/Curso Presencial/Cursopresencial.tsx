@@ -1,10 +1,10 @@
 import React from 'react';
-import Header from '../../components/Header/Header';
-import Sidebar from '../../components/Sidebar/Sidebar';
-import './MaterialEstudo.css';
+import Header from '../../../components/Header/Header';
+import Sidebar from '../../../components/Sidebar/Sidebar';
+import './Cursopresencial.css';
 import { useNavigate } from 'react-router-dom';
 
-function MaterialEstudo() {
+function CursoPresencial() {
 
     const navigate = useNavigate();
 
@@ -15,7 +15,7 @@ function MaterialEstudo() {
     navigate('/material-estudo');
   };
   return (
-    <div className="material-estudos-container">
+    <div className="curso-presencial-container">
       <Header />
       <Sidebar />
       <main className="main-content">
@@ -40,16 +40,12 @@ function MaterialEstudo() {
               </button>
             </div>
           </div>
-          <div className="links-container">
-            <p>Links de aulas para você assistir</p>
-            <div className="links-list">
-              <div className="link">Aula 1</div>
-              <div className="link">Aula 2</div>
-              <div className="link">Aula 3</div>
-              <div className="link">Aula 4</div>
-              <div className="link">Aula 5</div>
-              <div className="link">Aula 6</div>
-            </div>
+          <div className="video-container">
+            <p>Video de iniciação do curso</p>
+            <video controls>
+              <source src="/public/video/KR Informática e Idiomas,oficial.mp4" type="video/mp4" />
+              Seu navegador não suporta o elemento de vídeo.
+            </video>
           </div>
         </div>
       </main>
@@ -57,4 +53,4 @@ function MaterialEstudo() {
   );
 }
 
-export default MaterialEstudo;
+export default CursoPresencial;

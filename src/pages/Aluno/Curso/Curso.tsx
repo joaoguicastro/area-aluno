@@ -1,10 +1,15 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import Header from '../../components/Header/Header';
-import Sidebar from '../../components/Sidebar/Sidebar';
+import { Link, useNavigate } from 'react-router-dom';
+import Header from '../../../components/Header/Header';
+import Sidebar from '../../../components/Sidebar/Sidebar';
 import './Curso.css';
 
 function Curso() {
+  const navigate = useNavigate();
+  const envioMensagem = () => {
+    navigate('/envio-mensagem')
+  }
+
   return (
     <div className="curso-container">
       <Header />
@@ -27,7 +32,7 @@ function Curso() {
                 <img src="/perfil.svg" alt="nome Professor" />
                 <p>Professor<br/>Nome do Professor</p>
               </div>
-              <button className="btn-duvidas">Tira dúvidas</button>
+              <button onClick={envioMensagem} className="btn-duvidas">Tira dúvidas</button>
             </div>
           </div>
         </div>

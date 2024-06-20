@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import Header from '../../components/Header/Header';
-import SidebarAdm from '../../components/Sidebar Admin/SidebarAdm';
+import Header from '../../../components/Header/Header';
+import SidebarAdm from '../../../components/Sidebar Admin/SidebarAdm';
 import './Apostila.css';
 
 function AdicionarApostila() {
