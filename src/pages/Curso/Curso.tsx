@@ -13,8 +13,8 @@ function Curso() {
         <div className="course-menu">
           <ul>
             <li><a href="#videoaulas">VIDEOAULAS</a></li>
-            <li><a href="#material-de-estudos">MATERIAL DE ESTUDOS</a></li>
-            <li><a href="#percurso-de-aprendizagem">PERCURSO DE APRENDIZAGEM</a></li>
+            <li><Link to="/material-estudo">MATERIAL DE ESTUDOS</Link></li>
+            <li><Link to="/curso">PERCURSO DE APRENDIZAGEM</Link></li>
             <li><Link to="/material-complementar">MATERIAL COMPLEMENTAR</Link></li>
           </ul>
         </div>
