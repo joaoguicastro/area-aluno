@@ -1,0 +1,45 @@
+.enviar-mensagem-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+  
+  .main-content {
+    flex: 1;
+    padding: 20px;
+    background-color: #f0f4f8;
+    margin-left: 60px; /* adjust to the width of the sidebar */
+    margin-top: 70px; /* adjust to the height of the header */
+  }
+  
+  .mensagem-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:disabled {
+    background-color: #ccc;
+  }
+  
+  .feedback {
+    margin-top: 10px;
+    color: green;
+  }
+  

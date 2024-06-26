@@ -17,7 +17,9 @@ function App() {
       navigate('/home');
     } else if (cpf === '12345678910' && password === '123') {
       navigate('/admin');
-    } else {
+    }else if(cpf === '12345678901' && password === '123'){
+      navigate('/professor');
+    }else {
       alert('Usuário ou senha inválidos');
     }
   };

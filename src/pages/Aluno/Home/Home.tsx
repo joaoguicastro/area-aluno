@@ -1,7 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import Header from '../../components/Header/Header';
-import Sidebar from '../../components/Sidebar/Sidebar';
+import Header from '../../../components/Header/Header';
+import Sidebar from '../../../components/Sidebar/Sidebar';
 import './Home.css';
 
 function Home() {
